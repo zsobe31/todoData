@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <script src="src/mvc/model.js"></script>
+    <script src="src/mvc/view.js"></script>
+    <script src="src/mvc/controller.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <!-- heading -->
+    <div class="d-flex justify-content-around bg-info">
+        <h2 class="bg-info p-4 text-white mt-2">Teendők</h2>
+    </div>
+    <!-- heading end -->
+
+    <!-- todo add start -->
+    <div class="container text-center mt-4 mb-4 input">
+        <h3>Új teendő hozzáadása</h3>
+        <div class="container col-sm-8 card p-4">
+            <p class="text-success message">Az új teendő adatai sikeresen rögzítésre kerültek.</p>
+            <form action="">
+                <label class="col-sm-6" for="title">Megnevezés</label>
+                <input id="title" class="col-sm-6" type="text">
+                <label class="col-sm-6" for="description">Leírás</label>
+                <input id="description" class="col-sm-6" type="text">
+                <button class="btn btn-info text-white col-sm-6 mt-4 mb-4">Hozzáad</button>
+            </form>
+        </div>
+    </div>
+    <!-- todo add end -->
+
+    <!-- todo list start -->
+    <div class="container text-center mt-4 mb-5 collection">
+        <h3>Teendők listája</h3>
+        <ul>
+            <li class="container col-sm-10 card p-4 mt-3 d-flex lists">
+                <h5 class="text-left">Cím</h5>
+                <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quas dolore similique itaque quae accusantium quis modi ullam tempora repudiandae?</p>
+                <a href="#" class="text-success col-sm-3 ml-auto"><i class="fas fa-check"></i> Befejezve</a>
+            </li>
+            <li class="container col-sm-10 card p-4 mt-3 d-flex">
+                <h5 class="text-left">Cím</h5>
+                <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quas dolore similique itaque quae accusantium quis modi ullam tempora repudiandae?</p>
+                <a href="#" class="text-success col-sm-3 ml-auto"><i class="fas fa-check"></i> Befejezve</a>
+            </li>
+            <li class="container col-sm-10 card p-4 mt-3 d-flex">
+                <h5 class="text-left">Cím</h5>
+                <p class="text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quas dolore similique itaque quae accusantium quis modi ullam tempora repudiandae?</p>
+                <a href="#" class="text-success col-sm-3 ml-auto"><i class="fas fa-check"></i> Befejezve</a>
+            </li>
+        </ul>
+    </div>
+    <!-- todo list end -->
+
+    <!-- menu start -->
+    <div class="text-center fixed-bottom bg-light" id="navigation">
+        <a id="content" href=""><i style="font-size: 2em; color: gray;" class="fas fa-plus-square p-2"></i></a>
+        <a id="list" href=""><i style="font-size: 2em; color:gray;" class="far fa-list-alt p-2"></i></a>
+    </div>
+    <!-- menu end -->
+
+    <!-- out script add -->
+    <script src="src/script.js"></script>
+</body>
+
+</html>
